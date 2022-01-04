@@ -1,0 +1,115 @@
+html
+{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+header>h1
+{
+    font-weight: 400;
+    
+}
+
+header
+{
+    display: flex;
+    /* display flex karne se header ke saare child side me aane lagenge*/
+    justify-content:space-between;
+    margin: 0 3rem;
+    /* iss margin ka matlab top bottom se 0 and left right se 3 rem dega*/
+}
+
+li
+{    
+    list-style: none; /* isse list me lage bullet points hat jayenge*/
+    font-size: 1.5rem;
+    /* rem is a unit 1rem = 16pixel 
+       rem is a responsive unit jo ki screen ke according chota bda ho sakti hai  
+    */
+    
+}
+
+nav
+{
+    width: 22rem;
+    /* nav by default utni hi space leta hai jitna uske andar element hai nav ke pass koi extra space nhi rehta
+       isliye humne iski width badhayi taki hum list ke item ko space between kar sake.
+       bina nav ko width diye
+       agr hum ul me display flex karke justify content me space between kar denge tab koi fark nhi padega
+       kyuki nav ke pass pehle se space nhi hai jisse ki ye usko faila sake justify content space between karne
+       ke baad bhi
+    */
+
+    position: relative;
+    /* position relative karne se hume ye right mil jata hai ki hum uss particular content ko move kar sakte
+       hai 
+    */
+    top: 1rem; /* yha humne isko top se 1 rem niche kar diya or ye position relative karne ke baad hi
+                  karenge  kyuki position relative karenge tabhi hum particular content ko move kar sakte hai
+               */
+}
+
+ul
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.showCaseImage
+{
+    width: 95vw;
+    /* vw means view width yani jo bhi screen size hai uska 95 percent width hmara image lega 
+       yhi hai responsiveness but agr yhi pixel me dete width toh screen chota bda karne par image 
+       screen ke according manage nhi hoga
+
+       Height ke liye vh unit hai view hight
+
+       This concept is known as view port
+    */
+   margin: 1rem; 
+
+}
+
+article
+{
+   display: flex;
+   margin:1.5rem;
+   
+}
+
+.container
+{
+    text-align: center; 
+    margin-right: 2rem;
+    padding: 1rem;
+    
+}
+
+footer
+{  
+   background-color: black;
+   color: whitesmoke;
+   height: 4rem;
+   display: flex;
+   justify-content: center;
+   font-size: 1.5rem;
+   align-items: center;
+   /* align items vertically center kar dega */
+}
+
+a
+{
+   text-decoration: none;
+   /* isse navigation me jo underline aa rha tha wo remove ho jayega*/
+}
+
+a:hover
+{
+   color: red;
+}
+/* yha humne anchor tag me hover property lagaya hai ki jaise hi hum kisi bhi anchor
+   tag par jayenge tab uska color red ho jayega ye property lagane ke liye 
+   bas hume anchor tag ka a likhna hai then colon then hover then curlibraces 
+   then uske andar jo bhi karna hai wo kar do
+*/
